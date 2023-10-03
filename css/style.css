@@ -58,6 +58,7 @@ html, body{
 .but_a svg{
     margin: 5px 6px 5px 4px;
 }
+
 /* --------------------------------------- */
 
 .header{
@@ -408,7 +409,7 @@ html, body{
 
 .section_7{
     max-height: 414px;
-    padding: 113px 0 108px;
+    padding: 113px 0 100px;
 }
 
 .sc_7_box{
@@ -432,5 +433,119 @@ html, body{
 
 /* ----------------------- */
 
+.footer{
+    height: 652px;
+    padding: 100px 136px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_sc1{
+    display: flex;
+    justify-content: space-between;
+}
+.sc1_1_1{
+}
+.sc1_1_1 img{
+    margin-bottom: 20px;
+    width: 128px;
+    height: 31px;
+}
+.sc1_1_2{
+    color: #C0C0C0;
+    font-size: 13px;
+}
+
+.sc1_2_spusku{
+    display: flex;
+    padding-right: 102px;
+}
+.sc1_2{
+    margin-right: 16px;
+}
+
+.sc1_2_ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.sc1_2_ul li{
+    margin-bottom: 10px;
+}
+.sc1_2_ul li:last-child{
+    margin-bottom: 0;
+}
+.sc1_2_li_zag{
+    color: #C0C0C0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.footer_sc2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hr{
+    width: 100%;
+    border: 2px solid #fff;
+    margin: 36px 0;
+    padding: 0;
+}
+.hr2{
+    margin-bottom: 56px
+}
+.footer_sc2_1{
+    display: flex;
+    flex-direction: column;
+}
+.footer_sc2_1_t1{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.footer_sc2_1_t2{
+    color: #C0C0C0;
+    font-size: 13px;
+}
+.footer_sc2_2{
+    width: 458px;
+    height: 52px;
+    border-radius: 12px;
+    border: 1px solid #E5E7EB;
+    background: #F9FAFB;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.footer_sc2_2_ch{
+    margin-right: 6px;
+    width: 63px;
+    height: 30px;
+    border-radius: 11px;
+    background: #000;
+}
+
+.footer_sc3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_sc3 p{
+    color: #C0C0C0;
+}
+.footer_sc3_merezi{
+    display: flex;
+}
+.footer_sc3_merezi svg{
+    margin-right: 20px;
+    color: #C0C0C0;
+}
+.footer_sc3_merezi svg:last-child{
+    margin-right: 0px;
+}
+.footer_sc3_merezi svg:hover{
+    fill: #fff;
+}
 
 
