@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/fonts.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="shortcut icon" href="/img/логотипи/logo.ico">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/логотипи/logo.ico">
     <title>Aperture</title>
 </head>
 <body>
@@ -16,7 +16,7 @@
             <div class="header_top">
                 <div class="header_top_conteiner">
                     <a class="header_top_img" href="#header">
-                        <img src="/img/логотипи/logo.ico" alt="logo">
+                        <img src="img/логотипи/logo.ico" alt="logo">
                     </a>
                     
                     <div class="header_right">
@@ -105,8 +105,8 @@
                         <h2 class="text">What we do.</h2>
                         <p class="text">The areas that we're specialized in.</p>
                     </div>
-                    <div class="sc_1_box">
-                        <div class="box1">
+                    <div class="sc_1_box" id="sc_1_box">
+                        <div class="box1" id="box1">
                             <h4 class="sc_1_h text">Product Photography</h4>
                             <p class="sc_1_p text">Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
                             <div class="box_button">
@@ -563,11 +563,11 @@
                         </p>
                     </div>
                     <div class="section_5_logo">
-                        <img class="sc_5_img_logo" src="/img/логотипи/log2.ico" alt="">
-                        <img class="sc_5_img_logo" src="/img/логотипи/log1.ico" alt="">
-                        <img class="sc_5_img_logo" src="/img/логотипи/log3.ico" alt="">
-                        <img class="sc_5_img_logo" src="/img/логотипи/log4.ico" alt="">
-                        <img class="sc_5_img_logo" src="/img/логотипи/log5.ico" alt="">
+                        <img class="sc_5_img_logo" src="img/логотипи/log2.ico" alt="">
+                        <img class="sc_5_img_logo" src="img/логотипи/log1.ico" alt="">
+                        <img class="sc_5_img_logo" src="img/логотипи/log3.ico" alt="">
+                        <img class="sc_5_img_logo" src="img/логотипи/log4.ico" alt="">
+                        <img class="sc_5_img_logo" src="img/логотипи/log5.ico" alt="">
                     </div>
                 </div>
                 </section>
@@ -692,7 +692,7 @@
             <div class="footer_sc1">
                 <div class="sc1_1">
                     <a class="sc1_1_1" href="#header">
-                        <img src="/img/логотипи/logo.ico" alt="logo">
+                        <img src="img/логотипи/logo.ico" alt="logo">
                     </a>
                     <p class="sc1_1_2 text">Photographers & videographers capturing the world around us.</p>
                 </div>
@@ -725,9 +725,10 @@
                         <p class="footer_sc2_1_t1 text">Subscribe to our newsletter</p>
                         <p class="footer_sc2_1_t2 text">Read about all the things we do.</p>
                     </div>
-                    <div class="footer_sc2_2">
-                        <div class="footer_sc2_2_ch"></div>
-                    </div>
+                    <form class="footer_sc2_form">
+                        <textarea class="footer_sc2_textarea"></textarea>
+                        <button class="footer_sc2_2_button" type="submit">send</button>
+                    </form>
             </div>
             <hr class="hr hr2">
             <div class="footer_sc3">
@@ -746,5 +747,6 @@
             </div>
         </footer>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
