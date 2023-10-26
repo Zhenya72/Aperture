@@ -692,7 +692,7 @@ body.active{
     }
     .burger span{
         display: block;
-        width: 30px;
+        width: 25px;
         height: 5px;
         background: #fff;
         border-radius: 3px;
@@ -701,11 +701,22 @@ body.active{
     .burger::before, .burger::after{
         content: "";
         display: block;
-        width: 30px;
+        width: 25px;
         height: 5px;
         background: #fff;
         border-radius: 3px;
+        transition: transform 0.3s ease;
     }
+    .burger.active span{
+        opacity: 0;
+    }
+    .burger.active::before{
+        transform: rotate(-45deg) translate(-7px, 7px);
+    }
+    .burger.active::after{
+        transform: rotate(45deg) translate(-7px, -7px);
+    }
+
     .header_right{
         position: fixed;
         top: 0;
@@ -719,6 +730,7 @@ body.active{
         min-width: 300px;
         transform: translateX(100%);
         transition: all .3s;
+        overflow: auto;
     }
     .header_right.active {
         transform: translateX(0%);
@@ -731,7 +743,9 @@ body.active{
     .header_nav_list{
         flex-direction: column;
         justify-content: space-between;
-        height: 100px;
+        min-height: 100px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
     .header_nav_link{
         font-size: 17px;
