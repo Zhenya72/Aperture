@@ -11,7 +11,7 @@
 </head>
 <body id="body">
     <div class="wrapper">
-        <div class="overlay"></div>
+        <div class="overlay" id="overlay"></div>
         <header class="header" id="header">
             <div class="header_top">
                 <div class="header_top_conteiner">
@@ -33,7 +33,7 @@
                             </ul>
                         </nav>
     
-                        <a class="header_top_button text" href="#">Get template</a>    
+                        <button class="header_top_button text" href="#">Get template</button>    
                     </div>
                 </div>
             </div>
@@ -113,7 +113,7 @@
                             <h4 class="sc_1_h text">Product Photography</h4>
                             <p class="sc_1_p text">Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
                             <div class="box_button">
-                                <a class="but_a text" href="#">
+                                <button class="but_a text" id="open-more-box1">
                                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g id="Frame" clip-path="url(#clip0_2_66)">
                                     <g id="Group">
@@ -160,14 +160,25 @@
                                     </clipPath>
                                     </defs>
                                     </svg>                                    
-                                Read more</a>
+                                Read more</button>
                             </div>
                         </div>
+                        <div class="more-box1" id="more-box1">
+                            <div class="more-box-content more-box1-content">
+                                <div class="animation_background1"></div>
+                                <span id="close-box1-content" class="close">×</span>
+                                <h4 class="sc_1_h text">Product Photography</h4>
+                                <p class="sc_1_p text">Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
+                            
+                            </div>
+                        </div>
+
+
                         <div class="box2">
                             <h4 class="sc_1_h text">Architecture Photography</h4>
                             <p class="sc_1_p text">Aenean porta neque eget consequat fringilla. Vestibulum ultrices, orci nec egestas pharetra, ligula est semper enim, nec auctor sapien leo nec purus. Fusce tincidunt aliquet sapien, sit amet rhoncus leo imperdiet nec.</p>
                             <div class="box_button">
-                                <a class="but_a text" href="#">
+                                <button class="but_a text" id="open-more-box2">
                                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g id="Frame" clip-path="url(#clip0_2_66)">
                                     <g id="Group">
@@ -214,14 +225,23 @@
                                     </clipPath>
                                     </defs>
                                     </svg>     
-                                Read more</a>
+                                Read more</button>
                             </div>    
                         </div>
+                        <div class="more-box2" id="more-box2">
+                            <div class="more-box-content more-box2-content">
+                                <span id="close-box2-content" class="close">×</span>
+                                <h4 class="sc_1_h text">Architecture Photography</h4>
+                                <p class="sc_1_p text">Aenean porta neque eget consequat fringilla. Vestibulum ultrices, orci nec egestas pharetra, ligula est semper enim, nec auctor sapien leo nec purus. Fusce tincidunt aliquet sapien, sit amet rhoncus leo imperdiet nec.</p>
+                            </div>
+                        </div>
+
+
                         <div class="box3">
                             <h4 class="sc_1_h text">Drone Photography</h4>
                             <p class="sc_1_p text">Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt. Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
                             <div class="box_button">
-                                <a class="but_a text" href="#">
+                                <button class="but_a text" id="open-more-box3">
                                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g id="Frame" clip-path="url(#clip0_2_66)">
                                         <g id="Group">
@@ -268,14 +288,23 @@
                                         </clipPath>
                                         </defs>
                                     </svg>     
-                                Read more</a>
+                                Read more</button>
                             </div> 
                         </div>
+                        <div class="more-box3" id="more-box3">
+                            <div class="more-box-content more-box3-content">
+                                <span id="close-box3-content" class="close">×</span>
+                                <h4 class="sc_1_h text">Drone Photography</h4>
+                                <p class="sc_1_p text">Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt. Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
+                            </div>
+                        </div>
+
+
                         <div class="box4">
                             <h4 class="sc_1_h text">Wildlife Photography</h4>
                             <p class="sc_1_p text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis.</p>
                             <div class="box_button">
-                                <a class="but_a text" href="#">
+                                <button class="but_a text" id="open-more-box4">
                                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g id="Frame" clip-path="url(#clip0_2_66)">
                                     <g id="Group">
@@ -322,9 +351,18 @@
                                     </clipPath>
                                     </defs>
                                     </svg>     
-                                Read more</a>
+                                Read more</button>
                             </div> 
                         </div>
+                        <div class="more-box4" id="more-box4">
+                            <div class="more-box-content more-box4-content">
+                                <span id="close-box4-content" class="close">×</span>
+                                <h4 class="sc_1_h text">Wildlife Photography</h4>
+                                <p class="sc_1_p text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis.</p>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </section>
@@ -394,7 +432,7 @@
                     <h4 class="sc_3_h text">The tools that we use.</h4>
                     <p class="sc_3_p text">The say that "no place is boring if you've had a good night's sleep and have a pocket full of unexposed film". While we don't shoot (a lot) of film these days — these are the tools that we actually use everyday to capture the amazing things around us.</p>
                     <div class="box_button">
-                        <a class="but_a text" href="#">
+                        <button class="but_a text">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="Frame" clip-path="url(#clip0_2_66)">
                             <g id="Group">
@@ -441,7 +479,7 @@
                             </clipPath>
                             </defs>
                             </svg>     
-                            Check it out</a>
+                            Check it out</button>
                     </div> 
                 </div>
                 <div class="sc_3_icons">
@@ -638,7 +676,7 @@
                     <h3 class="sc_7_h text">Need help with photography or videography?</h3>
                     <p class="sc_7_p text">We're here for you!</p>
                     <div class="box_button">
-                        <a class="but_a text" href="#">
+                        <button class="but_a text">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="Frame" clip-path="url(#clip0_2_66)">
                             <g id="Group">
@@ -685,7 +723,7 @@
                             </clipPath>
                             </defs>
                             </svg>     
-                            Get in touch</a>
+                            Get in touch</button>
                     </div> 
                 </div>
             </section>

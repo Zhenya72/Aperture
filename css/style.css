@@ -63,7 +63,7 @@ body.active{
     border-radius: 14px;
     display: flex;
     align-items: center;
-    transition: .3s;
+    transition: all .3s;
 }
 .box_button:hover{
     transform: scale(1.1);
@@ -74,6 +74,8 @@ body.active{
     letter-spacing: 0.4px;
     text-decoration: none;
     padding-right: 10px;
+    border-radius: 14px;
+    border: none;
 }
 .but_a svg{
     margin: 5px 6px 5px 4px;
@@ -154,6 +156,7 @@ body.active{
     margin-left: 36px;
     padding: 12px 22px;
     transition: .3s;
+    border: none;
 }
 .header_top_button:hover{
     transform: scale(1.1);
@@ -278,6 +281,133 @@ body.active{
     text-align: left;
     margin: 0 30px 17px 0;
 }
+
+.more-box1 {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}  
+.more-box2 {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}  
+.more-box3 {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}  
+.more-box4 {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}  
+
+.more-box-content {
+    margin: 10% auto;
+    padding: 20px;
+    width: 100vh;
+    height: 80vh;
+    border-radius: 10px;
+    border: 1px solid #C0C0C0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    position: relative;
+    overflow: hidden;
+}  
+.more-box1-content::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url("../img/sections_1/sc_1.jpg") no-repeat center / cover;
+    border-radius: 10px;
+    z-index: -10;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: kenburns-bottom 5s ease-out both;
+}
+.more-box2-content::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url("../img/sections_1/sc_2.jpg") no-repeat center / cover;
+    border-radius: 10px;
+    z-index: -10;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: kenburns-bottom 5s ease-out both;
+}
+.more-box3-content::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url("../img/sections_1/sc_3.jpg") no-repeat center / cover;
+    border-radius: 10px;
+    z-index: -10;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: kenburns-bottom 5s ease-out both;
+}
+.more-box4-content::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url("../img/sections_1/sc_4.jpg") no-repeat center / cover;
+    border-radius: 10px;
+    z-index: -10;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: kenburns-bottom 5s ease-out both;
+}
+@keyframes kenburns-bottom {
+    0% {
+        transform: translate(-50%,-50%) scale(1);
+        transform-origin: 50% 84%;
+    }
+    100% {
+        transform: translate(-50%,-50%) scale(1.2);
+        transform-origin: bottom;
+    }
+}
+
+.close {
+    position: absolute;
+    color: #aaa;
+    top: 20px;
+    right: 20px;
+    font-size: 34px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 
 /* ---------------------------- */
@@ -768,6 +898,9 @@ body.active{
     .section_5_logo{
         gap: 5px;
     }
+    .more-box-content {
+        width: 80vh;
+    }  
 }
 
 /* ----------------------------- */
@@ -819,6 +952,9 @@ body.active{
     .footer{
         padding: 50px 63px;
     }
+    .more-box-content {
+        width: 60vh;
+    }  
 }
 
 
@@ -838,6 +974,9 @@ body.active{
     .footer_sc3 p{
         margin-bottom: 25px;
     }
+    .more-box-content {
+        width: 50vh;
+    }  
 }
 
 /* ----------------------------- */
