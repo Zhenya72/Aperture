@@ -372,13 +372,14 @@ body.active{
 /* ----------------------- */
 
 .section_5{
-    max-height: 500px;
+    min-height: 500px;
     padding: 120px 120px 100px;
 }
 .section_5_conteiner{
     display: flex;
     flex-direction: column;
     align-items: center;  
+    
 }
 .section_5_text{
     text-align: center;
@@ -398,9 +399,11 @@ body.active{
 .section_5_logo{
     padding: 40px 46px;
     display: grid;
+    grid-template-rows: auto;
     grid-template-columns: repeat(5, 128px);
     column-gap: 109px;
     align-items: center;
+    justify-content: center;
 }
 .sc_5_img_logo{
     width: 128px;
@@ -448,7 +451,7 @@ body.active{
     max-width: 571px;
     font-size: 40px;
     line-height: 42px;
-    margin-bottom: 15px;
+    margin: 0 15px 15px 15px;
 }
 .sc_7_p{
     color: #C0C0C0;
@@ -460,7 +463,7 @@ body.active{
 /* ----------------------- */
 
 .footer{
-    height: 652px;
+    min-height: 652px;
     padding: 100px 136px;
     display: flex;
     flex-direction: column;
@@ -470,7 +473,8 @@ body.active{
     display: flex;
     justify-content: space-between;
 }
-.sc1_1_1{
+.sc1_1{
+    margin-right: 15px;
 }
 .sc1_1_1 img{
     margin-bottom: 20px;
@@ -524,6 +528,8 @@ body.active{
 .footer_sc2_1{
     display: flex;
     flex-direction: column;
+    margin-right: 55px;
+    width: 100%;
 }
 .footer_sc2_1_t1{
     letter-spacing: 2px;
@@ -573,6 +579,7 @@ body.active{
 }
 .footer_sc3 p{
     color: #C0C0C0;
+    margin-right: 25px;
 }
 .footer_sc3_merezi{
     display: flex;
@@ -612,8 +619,17 @@ body.active{
         margin: 15px 40px 41px 30px;
     }
     .section_5_logo{
-        grid-template-columns: repeat(5, 100px);
-        column-gap: 85px;
+        column-gap: 50px;
+    }
+    .footer_sc1{
+        flex-direction: column;
+        align-items: start;
+    }
+    .sc1_1{
+        margin-bottom: 30px;
+    }
+    .sc1_2_spusku{
+        padding-right: 10px;
     }
 }
 
@@ -626,15 +642,39 @@ body.active{
     .header_top_conteiner{
         justify-content: center;
     }
-    /* hlgkfjcdhxgszffgguyguguylgyuguygulygugluglg
-    зірочка */
     .section_5_logo{
         grid-template-columns: repeat(5, 1fr); /* 2 колонки */
         grid-template-rows: repeat(2, 1fr); /* 3 рядки */
         gap: 20px;
     }
-    .sc_5_img_logo{
-        width: 128px;
+    .grid_item_1{
+        grid-column: 1/2;
+        grid-row: 1 / 2;
+    }
+    .grid_item_2{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    .grid_item_3{
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+    .grid_item_4{
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+    }
+    .grid_item_5{
+        grid-column: 5/6;
+        grid-row: 1 / 2;
+    }
+    .footer_sc2{
+        flex-direction: column;
+    }
+    .footer_sc2_1{
+        margin: 0 0 20px 0;
+    }
+    .footer_sc2{
+        align-items: start;
     }
 }
 
@@ -711,6 +751,42 @@ body.active{
         grid-template-rows: 540px 540px;
         justify-content: space-between;
     }
+    .section_5_logo{
+        gap: 5px;
+    }
+}
+
+/* ----------------------------- */
+/* -----------700px------------- */
+/* ----------------------------- */
+@media (max-width: 700px){
+    .section_5{
+        padding: 60px 60px 50px;
+    }
+    .section_5_logo{
+        grid-template-columns:  1fr;
+        grid-template-rows: repeat(5, 1fr); 
+    }
+    .grid_item_1{
+        grid-column: 1/2;
+        grid-row: 1 / 2;
+    }
+    .grid_item_2{
+        grid-column: 1/2;
+        grid-row: 2 / 3;
+    }
+    .grid_item_3{
+        grid-column: 1/2;
+        grid-row: 3 / 4;
+    }
+    .grid_item_4{
+        grid-column: 1/2;
+        grid-row: 4 / 5;
+    }
+    .grid_item_5{
+        grid-column: 1/2;
+        grid-row: 5 / 6;
+    }
 }
 
 /* ----------------------------- */
@@ -726,8 +802,30 @@ body.active{
     .sc_1_text p{
         margin: 0 10px;
     }
-
+    .footer{
+        padding: 50px 63px;
+    }
 }
+
+
+/* ----------------------------- */
+/* -----------460px------------- */
+/* ----------------------------- */
+@media (max-width: 460px){
+    .sc1_2_spusku{
+        flex-direction: column;
+    }
+    .sc1_2{
+        margin-bottom: 20px;
+    }
+    .footer_sc3{
+        flex-direction: column;
+    }
+    .footer_sc3 p{
+        margin-bottom: 25px;
+    }
+}
+
 /* ----------------------------- */
 /* -----------400px------------- */
 /* ----------------------------- */
