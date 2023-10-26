@@ -87,3 +87,26 @@ document.getElementById("close-box4-content").addEventListener("click", function
   overlay.classList.remove('active');
   body.classList.remove('active');
 });
+
+
+
+
+
+
+const animatedElement1 = document.querySelector(".section_5_logo");
+// const element2 = document.querySelector(".box4");
+
+window.addEventListener("scroll", function() {
+  animateBasedOnPosition(animatedElement1);
+});
+
+function animateBasedOnPosition(element) {
+  let elementPosition = element.getBoundingClientRect();
+  if (elementPosition.top < window.innerHeight-200 &&
+    elementPosition.bottom >= 0 &&
+    !element.classList.contains('animated')) {
+    // Додавання класу анімації до елементу
+    element.classList.add("animated");
+  }
+}
+
