@@ -1156,6 +1156,7 @@ body.active{
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
     margin-right: 6px;
+    padding: 0 5px;
     min-width: 63px;
     height: 30px;
     border-radius: 11px;
